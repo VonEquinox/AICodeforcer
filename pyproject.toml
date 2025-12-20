@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aicodeforcer"
+version = "0.1.0"
+description = "Gemini-powered algorithm problem solver agent"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.0.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+aicodeforcer = "codeforce_fucker.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/codeforce_fucker"]
