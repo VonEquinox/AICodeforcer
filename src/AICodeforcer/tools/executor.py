@@ -8,7 +8,7 @@ import tempfile
 import time
 from pathlib import Path
 
-from codeforce_fucker.types import ExecutionResult
+from AICodeforcer.types import ExecutionResult
 
 CODE_WRAPPER_TEMPLATE = '''
 import sys

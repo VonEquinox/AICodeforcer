@@ -44,7 +44,7 @@ GEMINI_BASE_URL=https://your-proxy.com  # 可选，自定义 API 地址
 aicodeforcer
 
 # 或
-python -m codeforce_fucker.main
+python -m AICodeforcer.main
 ```
 
 运行后：
@@ -58,7 +58,7 @@ python -m codeforce_fucker.main
 ## 项目结构
 
 ```
-src/codeforce_fucker/
+src/AICodeforcer/
 ├── __init__.py
 ├── main.py              # CLI 入口
 ├── types.py             # 类型定义

@@ -1,7 +1,7 @@
 """Gemini-powered algorithm problem solver agent."""
 
-from codeforce_fucker.types import Problem, TestCase, ExecutionResult
-from codeforce_fucker.agents import AlgorithmSolver
+from AICodeforcer.types import Problem, TestCase, ExecutionResult
+from AICodeforcer.agents import AlgorithmSolver
 
 __version__ = "0.1.0"
 __all__ = ["Problem", "TestCase", "ExecutionResult", "AlgorithmSolver"]

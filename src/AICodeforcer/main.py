@@ -4,7 +4,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from codeforce_fucker.agents import AlgorithmSolver
+from AICodeforcer.agents import AlgorithmSolver
 
 load_dotenv()
 

@@ -1,6 +1,6 @@
 """Run Python code tool for Gemini Function Calling."""
 
-from codeforce_fucker.tools.executor import execute_code
+from AICodeforcer.tools.executor import execute_code
 
 _timeout_seconds: float = 5.0
 _memory_mb: int = 256

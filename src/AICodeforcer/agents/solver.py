@@ -9,9 +9,9 @@ from typing import Callable, TextIO
 from google import genai
 from google.genai import types
 
-from codeforce_fucker.agents.brute_force import BruteForceGenerator
-from codeforce_fucker.agents.cpp_translator import CppTranslator
-from codeforce_fucker.tools import run_python_code, stress_test
+from AICodeforcer.agents.brute_force import BruteForceGenerator
+from AICodeforcer.agents.cpp_translator import CppTranslator
+from AICodeforcer.tools import run_python_code, stress_test
 
 SYSTEM_PROMPT = """你是一名**顶级 ICPC / CCPC 竞赛算法助手**。
 你的唯一目标是：**稳定、可复现地解出竞赛题，并输出可 AC 的最终代码**。

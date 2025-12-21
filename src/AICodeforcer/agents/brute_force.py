@@ -8,7 +8,7 @@ import time
 from google import genai
 from google.genai import types
 
-from codeforce_fucker.tools.executor import execute_code
+from AICodeforcer.tools.executor import execute_code
 
 BRUTE_FORCE_PROMPT = """你是一个专门编写**暴力算法**的助手。你的唯一目标是为算法题编写**绝对正确**的暴力解法。
 

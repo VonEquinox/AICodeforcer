@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-aicodeforcer = "codeforce_fucker.main:main"
+aicodeforcer = "AICodeforcer.main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/codeforce_fucker"]
+packages = ["src/AICodeforcer"]
