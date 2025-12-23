@@ -1,16 +1,23 @@
 """Stress test tool for comparing solution with brute force."""
 
+import os
+
+from dotenv import load_dotenv
+
 from AICodeforcer.standard.tools.executor import execute_code
+
+load_dotenv()
 
 _timeout_seconds: float = 5.0
 _memory_mb: int = 256
+_default_num_tests: int = int(os.getenv("STRESS_TEST_NUM", "1000"))
 
 
 def stress_test(
     solution_code: str,
     brute_force_code: str,
     generator_code: str,
-    num_tests: int = 1000,
+    num_tests: int = _default_num_tests,
 ) -> str:
     """对拍验证工具：比较优化算法和暴力算法的输出。"""
     for i in range(num_tests):
